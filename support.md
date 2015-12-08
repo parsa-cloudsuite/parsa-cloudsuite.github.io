@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Support
+show_ord: 70
 ---
 
 

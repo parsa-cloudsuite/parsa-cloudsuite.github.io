@@ -1,8 +1,8 @@
 ---
 layout: default
-title: About
-#icon: flaticon-user7
+title: Home
 ---
+<!-- #icon: flaticon-user7 -->
 
 <div id="content_outline">
 <div id="content-projects"> 

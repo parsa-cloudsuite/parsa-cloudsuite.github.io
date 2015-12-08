@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Licenses
+show_ord: 20
 ---
 
 

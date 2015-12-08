@@ -1,6 +1,7 @@
 ---
 layout: page
 title: People
+show_ord: 50
 ---
 
 
@@ -22,19 +23,14 @@ title: People
 <br/>
 <li><a href="http://parsa.epfl.ch/~drumond">Mario Drumond</a></li>
 <br/>
-<li><a href="http://parsa.epfl.ch/~jevdjic">Djordje Jevdjic</a></li>
-<br/>
-<li><a href="http://parsa.epfl.ch/~kaynak">Cansu Kaynak</a></li>
-<br/>
-<li><a href="http://parsa.epfl.ch/~kocberbe">Onur Kocberber</a></li>
-<br/>
 <li><a href="http://parsa.epfl.ch/~mirzadeh/">Nooshin Mirzadeh</a></li>
 <br/>
 <li><a href= "http://parsa.epfl.ch/~picorel/">Javier Picorel</a></li>
 <br/>
 <li><a href="http://parsa.epfl.ch/~psaropou/">Georgios Psaropoulos</a></li>
 <br/>
-<li><a href="http://parsa.epfl.ch/~volos">Stavros Volos</a></li>
+<li><a href="http://parsa.epfl.ch/~ustiugov">Dmitrii Ustiugov</a></li>
+<br/>
 </ul>
 <br/>
 <h1>Past Contributors</h1>
@@ -44,6 +40,14 @@ title: People
 <li>Mohammad Alisafaee</li>
 <br>
 <li><a href="http://people.epfl.ch/adrian.popescu">Adrian Popescu</a></li>
+<br/>
+<li>Stavros Volos</li>
+<br/>
+<li>Djordje Jevdjic</li>
+<br/>
+<li>Cansu Kaynak</li>
+<br/>
+<li>Onur Kocberber</li>
 <br/>
 
 </ul>
