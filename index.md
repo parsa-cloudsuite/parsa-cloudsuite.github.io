@@ -28,7 +28,7 @@ title: Home
 
                         <!-- start include/mainData/dataPicture.jsp -->
 
-<p>CloudSuite is a benchmark suite for emerging scale-out applications. The second release consists of eight applications that have been selected based on their popularity in today's datacenters. The benchmarks are based on real-world software stacks and represent real-world setups.
+<p>CloudSuite is a benchmark suite for emerging scale-out applications. The third release consists of eight applications that have been selected based on their popularity in today's datacenters. The benchmarks are based on real-world software stacks and represent real-world setups.
 
 </p>
 
