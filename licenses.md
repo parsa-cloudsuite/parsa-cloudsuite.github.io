@@ -20,7 +20,7 @@ sidebar: "true"
 <li><a href="http://www.php.net/license/3_01.txt">PHP</a></li>
 <li><a href="http://www.php.net/license/3_01.txt">APC (Alternative PHP Cache)</a></li>
 <li><a href="https://github.com/shanti/olio/blob/master/LICENSE">Olio Application</a></li>
-<li><a href="http://www.opensource.apple.com/license/apsl/">Darwin Streaming Server</a></li>
+<!-- <li><a href="http://www.opensource.apple.com/license/apsl/">Darwin Streaming Server</a></li> -->
 <li><a href="http://www.apache.org/licenses/LICENSE-2.0">Nutch</a></li>
 <li><a href="http://www.apache.org/licenses/LICENSE-2.0">Hadoop</a></li>
 <li><a href="http://www.apache.org/licenses/LICENSE-2.0">Mahout</a></li>
@@ -30,7 +30,15 @@ sidebar: "true"
 <!-- <li><a href ="https://github.com/dslab-epfl/cloud9/blob/master/CLOUD9-LICENSE">Cloud9 software</a></li>
 <li><a href="https://github.com/dslab-epfl/cloud9/blob/master/KLEE-LICENSE">KLEE</a></li> -->
 <li><a href="https://github.com/memcached/memcached/blob/master/LICENSE">Memcached</a></li>
-<li><a href="http://www.gnu.org/licenses/gpl.html">GraphLab</a></li>
+<!-- <li><a href="http://www.gnu.org/licenses/gpl.html">GraphLab</a></li> -->
+<li><a href="https://github.com/httperf/httperf/blob/master/COPYRIGHT">Httperf</a></li>
+
+<li><a href="https://github.com/apache/spark/blob/master/LICENSE">Spark</a></li>
+<li><a href="https://github.com/apache/spark/blob/master/LICENSE">MLlib</a></li>
+<li><a href="https://github.com/apache/spark/blob/master/LICENSE">GraphX</a></li>
+<li><a href="http://www.apache.org/licenses/LICENSE-2.0">Sorl</a></li>
+<li><a href="http://www.apache.org/licenses/LICENSE-2.0">Zookeeper</a></li>
+<li><a href="http://www.apache.org/licenses/LICENSE-2.0">Lucene</a></li>
 </ul>
 </p>
 <p>
@@ -40,7 +48,7 @@ sidebar: "true"
 <p>
 CloudSuite 3.0 Benchmark Suite
 <br/>	
-Copyright (c) 2011-2015, Parallel Systems Architecture Lab, EPFL<br/>
+Copyright (c) 2011-{{ site.time | date: '%Y' }}, Parallel Systems Architecture Lab, EPFL<br/>
 All rights reserved.<br/>
 
 Redistribution and use in source and binary forms, with or without<br/>
