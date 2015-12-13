@@ -40,20 +40,20 @@ title: Home
 Cloud computing is emerging as a dominant computing platform for providing scalable online services to a global client base. Today's popular online services (e.g., web search, social networking, and business analytics) are characterized by massive working sets, high degrees of parallelism, and real-time constraints. These characteristics set scale-out applications apart from desktop (SPEC), parallel (PARSEC), and traditional commercial server applications. In order to stimulate research in the field of cloud and data-centric computing, we have created CloudSuite, a benchmark suite based on real-world online services. 
 </p>
 <p>
-CloudSuite covers a broad range of application categories commonly found in today's datacenters. The first release includes data analytics, data serving, media streaming, large-scale and computation-intensive tasks, web search, and web serving. The second release also includes graph analytics and data caching. More information about the benchmarks may be found in the <a href="./overview.html">overview page</a>.
+CloudSuite covers a broad range of application categories commonly found in today's datacenters. The first release includes data analytics, data serving, media streaming, large-scale and computation-intensive tasks, web search, and web serving. The second release also includes graph analytics and data caching.</a>.
 </p>
 <h1>CloudSuite on Flexus</h1>
 <p>
 To facilitate micro-architectural simulation of CloudSuite applications, we prepared CloudSuite images running on the Simics full-system simulator. The Simics images allow the simulation of CloudSuite applications running on up-to 64 cores and were released at our ISCA 2012 tutorial: "CloudSuite on Flexus".
 </p>
 <p>
-CloudSuite images are <b>now available to <a href="./downloads.html">download</a></b>. To get a copy of the CloudSuite images, please send an email to cloudsuite-admin(at)groupes.epfl.ch; you will be provided with an account to access and download the images. 
+CloudSuite images are now available to <a href="./benchmarks">benchmarks</a>. To get a copy of the CloudSuite images, please send an email to cloudsuite-admin(at)groupes.epfl.ch; you will be provided with an account to access and download the images. 
 </p>
 </p>
 <h1>Usage and licenses of CloudSuite</h1>
-<p>CloudSuite is available for researchers interested in pursuing research in the field of cloud computing and datacenters. CloudSuite's software components are all available as open-source software. All of the software components are governed by their own licensing terms. Researchers interested in using CloudSuite are required to fully understand and abide by the licensing terms of the various components. For more information, please refer to the <a href="./licenses.html">license page</a>.</p>
+<p>CloudSuite is available for researchers interested in pursuing research in the field of cloud computing and datacenters. CloudSuite's software components are all available as open-source software. All of the software components are governed by their own licensing terms. Researchers interested in using CloudSuite are required to fully understand and abide by the licensing terms of the various components. For more information, please refer to the <a href="./licenses">license page</a>.</p>
 
-<p>For a microarchitectural characterization of the benchmarks, please see the following ASPLOS 2012 paper: <a href="./publications.html">"Clearing the Clouds: A Study of Emerging Scale-out Workloads on Modern Hardware"</a></p>
+<p>For a microarchitectural characterization of the benchmarks, please see the following ASPLOS 2012 paper: <a href="./publications">"Clearing the Clouds: A Study of Emerging Scale-out Workloads on Modern Hardware"</a></p>
 
 <br/>
 
