@@ -35,12 +35,12 @@ sidebar: "true"
 </p>
 <p>
 <b>Software developed internally (by the CloudSuite group)</b>
-<br/><b>CloudSuite 2.0 License</b>
+<br/><b>CloudSuite 3.0 License</b>
 
 <p>
-CloudSuite 2.0 Benchmark Suite
+CloudSuite 3.0 Benchmark Suite
 <br/>	
-Copyright (c) 2011-2013, Parallel Systems Architecture Lab, EPFL<br/>
+Copyright (c) 2011-2015, Parallel Systems Architecture Lab, EPFL<br/>
 All rights reserved.<br/>
 
 Redistribution and use in source and binary forms, with or without<br/>
