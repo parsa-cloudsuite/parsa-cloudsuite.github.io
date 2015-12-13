@@ -19,7 +19,7 @@
     {% assign pages_list = site.pages | sort:"show_ord" %}
     {% for node in pages_list %}
       {% if node.title != null %}
-        {% if node.layout == "page" %}
+        {% if node.layout == "page" and node.sidebar == "true" %}
           <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
         {% endif %}
       {% endif %}
@@ -32,7 +32,7 @@
     <!-- <span class="sidebar-nav-item">Workloads TBD</span> -->
 
 
-    <div id='cssmenu'>
+<!--     <div id='cssmenu'>
 <ul>
    <li class='has-sub'><a href='#'><span>Workloads</span></a>
       <ul>
@@ -44,18 +44,16 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-<!--          <li><a href='#'><span>Web Search</span></a></li>
-         <li><a href='#'><span>Web Serving</span></a></li>
-         <li class='last'><a href='#'><span>Product 3</span></a></li> -->
+
       </ul>
    </li>
 </ul>
-</div>
+</div> -->
 
 <div class="sidebar-item">
-      <img alt="EPFL Logo" src="{{ site.baseurl }}/logo/epfl_logo1.png"></img>
-      <img alt="EcoCloud Logo" src="{{ site.baseurl }}/logo/ecocloud_logo.png"></img>
       <img alt="Parsa Logo" src="{{ site.baseurl }}/logo/parsa_logo.png"></img>
+      <img alt="EcoCloud Logo" src="{{ site.baseurl }}/logo/ecocloud_logo.png"></img>
+      <img alt="EPFL Logo" src="{{ site.baseurl }}/logo/epfl_logo1.png"></img>
  </div>
 
   </nav>

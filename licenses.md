@@ -2,13 +2,12 @@
 layout: page
 title: Licenses
 show_ord: 20
+sidebar: "true"
 ---
 
 
 <div id="content_outline">
 <div id="content-projects"> 
-
-<h1>License</h1>
 
                         <!-- start include/mainData/dataPicture.jsp -->
 

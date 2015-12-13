@@ -2,13 +2,14 @@
 layout: page
 title: People
 show_ord: 50
+sidebar: "true"
 ---
 
 
 <div id="content_outline">
 <div id="content-projects"> 
  
-<h1>Faculty</h1>
+<h2>Faculty</h2>
 <ul>
 <li><a href="http://people.epfl.ch/anastasia.ailamaki">Anastasia Ailamaki</a></li>
 <br/>
@@ -17,7 +18,7 @@ show_ord: 50
 <li><a href="http://compas.cs.stonybrook.edu/~mferdman/">Mike Ferdman</a></li>
 </ul>
 <br/>
-<h1>Students</h1>
+<h2>Students</h2>
 <ul>
 <li><a href="http://parsa.epfl.ch/~daglis">Alexandros Daglis</a></li>
 <br/>
@@ -33,7 +34,7 @@ show_ord: 50
 <br/>
 </ul>
 <br/>
-<h1>Past Contributors</h1>
+<h2>Past Contributors</h2>
 <ul>
 <li>Almutaz Adileh</li>
 <br>

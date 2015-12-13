@@ -11,18 +11,20 @@ title: Home
 
 <ul style="list-style: none; padding-left:0;">
 
+<li> <b> Jan 2016: </b> <br> A two-day tutorial, <a href="./tutorial2015-hipeac/index.html">Server Benchmarking with CloudSuite 3.0</a>, will be presented on February 2nd-3rd at EPFL. Here are the tutorial slides used on the <a href="http://parsa.epfl.ch/cloudsuite/docs/CloudSuite2.0-on-Flexus-epfl-15_day1.pdf">first day</a> and the <a href="http://parsa.epfl.ch/cloudsuite/docs/CloudSuite2.0-on-Flexus-epfl-15_day2.pdf">second day</a>.</li>
+<br>
 <li> <b> Feb 2015: </b> <br> A two-day tutorial, <a href="http://parsa.epfl.ch/cloudsuite/CloudSuite-Flexus-epfl15.html">Rigorous and Practical Server Design Evaluation</a>, will be presented on February 2nd-3rd at EPFL. Here are the tutorial slides used on the <a href="http://parsa.epfl.ch/cloudsuite/docs/CloudSuite2.0-on-Flexus-epfl-15_day1.pdf">first day</a> and the <a href="http://parsa.epfl.ch/cloudsuite/docs/CloudSuite2.0-on-Flexus-epfl-15_day2.pdf">second day</a>.</li>
 <br>
-<li> <b> Mar 2014: </b> <br> CloudSuite 2.0 will be presented at the tutorial <a href="http://parsa.epfl.ch/cloudsuite/ispass14-tutorial">Rigorous and Practical Server Design Evaluation</a>. The tutorial will be held in conjuction with <a href="http://ispass.org/ispass2014/">ISPASS 2014 </a> in Monterey. Here are the tutorial <a href="docs/CloudSuite2.0-on-Flexus-ispass14.pdf">slides.</a></li>
+<!-- <li> <b> Mar 2014: </b> <br> CloudSuite 2.0 will be presented at the tutorial <a href="http://parsa.epfl.ch/cloudsuite/ispass14-tutorial">Rigorous and Practical Server Design Evaluation</a>. The tutorial will be held in conjuction with <a href="http://ispass.org/ispass2014/">ISPASS 2014 </a> in Monterey. Here are the tutorial <a href="docs/CloudSuite2.0-on-Flexus-ispass14.pdf">slides.</a></li>
 <br>
 <li> <b> Mar 2013: </b> <br> CloudSuite 2.0 is released and presented at the tutorial <a href="http://isca2013.eew.technion.ac.il/">ISCA 2013</a> in Tel Aviv.  Here are the tutorial <a href="docs/CloudSuite2.0-on-Flexus-isca13.pdf">slides</a> and the <a href="docs/deploy_cloudsuite.pdf">guidelines</a> for using the released Simics images.</li>
-<!-- <li> <b> Jun 2013: </b> <br> CloudSuite 2.0 is be released in June 2013, and presented at the tutorial <a href="http://parsa.epfl.ch/cloudsuite/isca13-tutorial.html">CloudSuite 2.0 on Flexus</a>. The tutorial will be held in conjuction with <a href="http://isca2013.eew.technion.ac.il/">ISCA 2013</a> in Tel Aviv.</li> </br><--!>
+<li> <b> Jun 2013: </b> <br> CloudSuite 2.0 is be released in June 2013, and presented at the tutorial <a href="http://parsa.epfl.ch/cloudsuite/isca13-tutorial.html">CloudSuite 2.0 on Flexus</a>. The tutorial will be held in conjuction with <a href="http://isca2013.eew.technion.ac.il/">ISCA 2013</a> in Tel Aviv.</li> </br>
 <br>
 <li> <b> Jun 2012: </b> <br> A full-day tutorial, <a href="http://parsa.epfl.ch/cloudsuite/isca12-tutorial.html">CloudSuite on Flexus</a>, will be presented at ISCA 2012 in Portland, Oregon.</li></br>
-</ul>
+</ul> -->
 
 
- <h1>CloudSuite 2.0</h1>
+ <h1>CloudSuite 3.0</h1>
 
                         <!-- start include/mainData/dataPicture.jsp -->
 

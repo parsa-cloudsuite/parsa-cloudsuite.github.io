@@ -2,6 +2,7 @@
 layout: page
 title: Publications
 show_ord: 10
+sidebar: "true"
 ---
 
 
@@ -10,13 +11,16 @@ show_ord: 10
 
 
 
-<h1>For Citations</h1>
+<h2>For Citations</h2>
 
 
 <p>Please cite the following paper if you need a citation for CloudSuite: <br><br>
 <b>Clearing the Clouds: A Study of Emerging Scale-out Workloads on Modern Hardware</b><br/>
 Michael Ferdman, Almutaz Adileh, Onur Kocberber, Stavros Volos, Mohammad Alisafaee, Djordje Jevdjic, Cansu Kaynak, Adrian Daniel Popescu, Anastasia Ailamaki, and Babak Falsafi.<br/>
-<em>In the 17th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), March 2012.</em> [<a href=./bib/Clearing_the_Clouds.bib>bibtex</a>] [<a href ="./clearing-clouds.pdf">PDF</a>]</p>
+<em>In the 17th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), March 2012.</em> 
+<br>
+[<a href="../bib/Clearing_the_Clouds.bib">bibtex</a>]
+[<a href ="./clearing-clouds.pdf">PDF</a>]</p>
 <br>
 
 <h1>Research Papers Using CloudSuite</h1>
