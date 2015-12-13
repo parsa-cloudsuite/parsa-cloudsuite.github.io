@@ -32,6 +32,8 @@ sidebar: "true"
 <br/>
 <li><a href="http://parsa.epfl.ch/~ustiugov">Dmitrii Ustiugov</a></li>
 <br/>
+<li><a href="http://parsa.epfl.ch/~pourhabi">Arash Pourhabibi</a></li>
+<br/>
 </ul>
 <br/>
 <h2>Past Contributors</h2>

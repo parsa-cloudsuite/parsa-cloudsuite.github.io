@@ -27,8 +27,8 @@ sidebar: "true"
 <li><a href="http://www.apache.org/licenses/LICENSE-2.0">Cassandra</a></li>
 <li><a href="https://github.com/brianfrankcooper/YCSB/blob/master/LICENSE.txt">Yahoo! Cloud Serving Benchmark Framework</a></li>
 <li><a href="http://www.opensource.org/licenses/cddl1.php">Faban workload generator</a></li>
-<li><a href ="https://github.com/dslab-epfl/cloud9/blob/master/CLOUD9-LICENSE">Cloud9 software</a></li>
-<li><a href="https://github.com/dslab-epfl/cloud9/blob/master/KLEE-LICENSE">KLEE</a></li>
+<!-- <li><a href ="https://github.com/dslab-epfl/cloud9/blob/master/CLOUD9-LICENSE">Cloud9 software</a></li>
+<li><a href="https://github.com/dslab-epfl/cloud9/blob/master/KLEE-LICENSE">KLEE</a></li> -->
 <li><a href="https://github.com/memcached/memcached/blob/master/LICENSE">Memcached</a></li>
 <li><a href="http://www.gnu.org/licenses/gpl.html">GraphLab</a></li>
 </ul>
