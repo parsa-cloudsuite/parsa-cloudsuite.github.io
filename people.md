@@ -11,8 +11,8 @@ sidebar: "true"
  
 <h2>Faculty</h2>
 <ul>
-<li><a href="http://people.epfl.ch/anastasia.ailamaki">Anastasia Ailamaki</a></li>
-<br/>
+<!-- <li><a href="http://people.epfl.ch/anastasia.ailamaki">Anastasia Ailamaki</a></li>
+<br/> -->
 <li><a href="http://parsa.epfl.ch/~falsafi/">Babak Falsafi</a></li>
 <br/>
 <li><a href="http://compas.cs.stonybrook.edu/~mferdman/">Mike Ferdman</a></li>
