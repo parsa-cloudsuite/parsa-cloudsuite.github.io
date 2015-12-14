@@ -29,33 +29,12 @@ To ease the deployment of CloudSuite into private and public cloud systems, the 
 <br/>
 
 
-<h2>Detailed Program</h2>
 
-
-<h3>(Tentative) Agenda</h3>
-<table cellspacing="8" border="0">
-<tr id="row1"  >
-<td width="20%" align="center">Time Slot</td><td>Topic</td><td>Material</td>
-</tr>
-<tr align="center"><td>1:30pm - 2:15pm</td><td>CloudSuite 2.0</td><td>Overview of CloudSuite 2.0 benchmarks and running them on real hardware</td>
-</tr>
-<tr align="center"><td>2:15pm - 2:45pm</td>
-<td>CloudSuite Full-System Simulation </td>
-<td>Introduction to Flexus and its interaction with the Simics full-system simulator </tr>
-<tr align="center"><td>2:45pm - 3:15pm</td><td><em>Coffee Break</em></td><td></td><td></td></tr>
-<tr align="center"><td>3:15pm - 3:45pm</td><td>Fast and Detailed Simulation Using Flexus</td><td>Demonstrating Flexus internals and how to perform detailed microarchitectural simulation </td>
-</tr>
-<tr align="center"><td>3:45pm - 4:30pm</td><td>Statistical Sampling</td><td>Making detailed simulation fast using SMARTS sampling methodology</td>
-<tr align="center"><td>4:30pm</td><td> Wrap-up </td></tr>
-</tr>
-</table>
-
-<br/>
 <h3>Organizers</h3>
-
-
 <ul>
-<a href="http://parsa.epfl.ch/~daglis">Alexandros Daglis</a> is a fourth year PhD student that works at EPFL under the supervision of Babak Falsafi. His research interests include rack-scale computing and datacenter architectures. His current focus is on system design for high performance remote memory access.
+<li><a href="http://parsa.epfl.ch/~daglis">Alexandros Daglis</a> is a fourth year PhD student that works at EPFL under the supervision of Babak Falsafi. His research interests include rack-scale computing and datacenter architectures. His current focus is on system design for high performance remote memory access.</li>
+<li><a href="http://parsa.epfl.ch/~picorel">Javier Picorel</a> is a fifth year PhD student working at EPFL under the supervision of Babak Falsafi. His research interests are in computer architecture, specially architectures and system support for processing-in-memory systems.</li>
+<li><a href="http://parsa.epfl.ch/~drumond">Mario Drumond</a> is a second year PhD student that works at EPFL under the supervision of Babak Falsafi. His research interests include reconfigurable computing and computer architecture. His current focus is on using FPGAs to acelerate machine learning algorithms.</li>
 <!--
 <li> <a href="http://parsa.epfl.ch/~jevdjic">Djordje Jevdjic</a> is a fifth-year PhD candidate in the Parallel Systems Architecture Laboratory at EPFL, advised by Prof. Babak Falsafi. Djordje works on high-performance memory systems for servers, including on-chip DRAM caches and 3D-die stacking, with emphasis on locality and energy-efficiency.</li>
 <li> <a href="http://parsa.epfl.ch/~kaynak">Cansu Kaynak</a> is a fifth-year PhD candidate in the Parallel Systems Architecture Laboratory at EPFL, advised by Prof. Babak Falsafi. Cansu's research focuses on high-performance memory systems to bridge the ever-increasing processor/memory performance gap. She is currently working on mitigating instruction-related stalls, a key performance bottleneck in server applications.</li> 
@@ -63,3 +42,23 @@ To ease the deployment of CloudSuite into private and public cloud systems, the 
 -->
 
 </ul>
+
+
+<h3>(Tentative) Agenda</h3>
+<table cellspacing="8" border="0">
+<tr id="row1"  >
+<td width="20%" align="center">Time Slot</td><td>Topic</td><td>Material</td>
+</tr>
+<tr align="center"><td>14:00 - 15:00</td><td>CloudSuite 3.0</td><td>Overview of CloudSuite 3.0</td>
+</tr>
+<tr align="center"><td>15:00 - 15:15</td>
+<td><em>Coffee Break</em></td><td></td>
+</tr>
+<tr align="center"><td>15:15 - 16:15</td><td>CloudSuite on Real Hardware</td><td>Running CloudSuite on real hardware</td></tr>
+<tr align="center"><td>16:15 - 16:30</td><td><em>Coffee break</em></td><td></td>
+</tr>
+<tr align="center"><td>16:30 - 17:30</td><td>CloudSuite Full-System Simulation</td><td>Introduction to Flexus and its interaction with the QEMU full-system simulator</td>
+</table>
+
+
+

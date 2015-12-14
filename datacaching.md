@@ -18,6 +18,7 @@ This benchmark features two tiers: the server(s), running Memcached, and the cli
 ### Dockerfiles ###
 
 Supported tags and their respective `Dockerfile` links:
+
  - [`server`][serverdocker]: This represents the Memcached server running as a daemon.
  - [`client`][clientdocker]: This represents the client which requests to access the server's data.
 

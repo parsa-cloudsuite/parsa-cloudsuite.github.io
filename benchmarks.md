@@ -2,7 +2,7 @@
 layout: page
 title: Benchmarks
 sidebar: "true"
-show_ord: 90
+show_ord: 20
 ---
 
 <ul>
@@ -10,7 +10,7 @@ show_ord: 90
     	{% for node in pages_list %}
       	{% if node.title != null %}
         	{% if node.layout == "page" and node.bench == "true" %}
-          		<li><a href="{{ node.url }}">{{ node.title }}</a></li>
+          		<li><a target="_blank" href="{{ node.url }}">{{ node.title }}</a></li>
         	{% endif %}
       	{% endif %}
     {% endfor %}

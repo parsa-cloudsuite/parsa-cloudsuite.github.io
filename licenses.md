@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Licenses
-show_ord: 20
+show_ord: 90
 sidebar: "true"
 ---
 
