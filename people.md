@@ -24,6 +24,8 @@ sidebar: "true"
 <br/>
 <li><a href="http://parsa.epfl.ch/~mirzadeh/">Nooshin Mirzadeh</a></li>
 <br/>
+<li><a href="http://compas.cs.stonybrook.edu/~tpalit/">Tapti Palit</a></li>
+<br>
 <li><a href= "http://parsa.epfl.ch/~picorel/">Javier Picorel</a></li>
 <br/>
 <li><a href="http://parsa.epfl.ch/~pourhabi">Arash Pourhabibi</a></li>
@@ -50,8 +52,6 @@ sidebar: "true"
 <li>Cansu Kaynak</li>
 <br/>
 <li>Onur Kocberber</li>
-<br>
-<li><a href="http://compas.cs.stonybrook.edu/~tpalit/">Tapti Palit</a></li>
 <br>
 <li><a href="http://people.epfl.ch/adrian.popescu">Adrian Popescu</a></li>
 <br/>
