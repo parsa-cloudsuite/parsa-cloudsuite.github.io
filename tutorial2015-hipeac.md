@@ -16,7 +16,7 @@ title: Server Benchmarking with CloudSuite 3.0
 </p>
 
 <br/>
-<h1>Tutorial In Brief</h1>
+<h2>Tutorial In Brief</h2>
 <p>
 Since its inception, CloudSuite (cloudsuite.ch) has emerged as a popular suite of benchmarks both in industry and among academics for scale-out server and services performance evaluation. The EuroCloud Server project blueprinted key optimizations in server SoCs based on the salient features of CloudSuite workloads that lead to an order of magnitude improvement in efficiency while preserving QoS. ARM-based server products (e.g., Cavium ThunderX) have now emerged following these guidelines and showcasing the improved efficiency.
 </p>
@@ -29,10 +29,10 @@ To ease the deployment of CloudSuite into private and public cloud systems, the 
 <br/>
 
 
-<h1>Detailed Program</h1>
+<h2>Detailed Program</h2>
 
 
-<h4>(Tentative) Agenda</h4>
+<h3>(Tentative) Agenda</h3>
 <table cellspacing="8" border="0">
 <tr id="row1"  >
 <td width="20%" align="center">Time Slot</td><td>Topic</td><td>Material</td>
@@ -51,13 +51,11 @@ To ease the deployment of CloudSuite into private and public cloud systems, the 
 </table>
 
 <br/>
-<h4>Organizer</h4>
+<h3>Organizers</h3>
 
 
 <ul>
-<a href="http://parsa.epfl.ch/~daglis">Alexandros Daglis</a> is a fourth year PhD student that works at EPFL under the supervision of Babak Falsafi.
-His research interests include rack-scale computing and datacenter architectures.
-His current focus is on system design for high performance remote memory access..
+<a href="http://parsa.epfl.ch/~daglis">Alexandros Daglis</a> is a fourth year PhD student that works at EPFL under the supervision of Babak Falsafi. His research interests include rack-scale computing and datacenter architectures. His current focus is on system design for high performance remote memory access.
 <!--
 <li> <a href="http://parsa.epfl.ch/~jevdjic">Djordje Jevdjic</a> is a fifth-year PhD candidate in the Parallel Systems Architecture Laboratory at EPFL, advised by Prof. Babak Falsafi. Djordje works on high-performance memory systems for servers, including on-chip DRAM caches and 3D-die stacking, with emphasis on locality and energy-efficiency.</li>
 <li> <a href="http://parsa.epfl.ch/~kaynak">Cansu Kaynak</a> is a fifth-year PhD candidate in the Parallel Systems Architecture Laboratory at EPFL, advised by Prof. Babak Falsafi. Cansu's research focuses on high-performance memory systems to bridge the ever-increasing processor/memory performance gap. She is currently working on mitigating instruction-related stalls, a key performance bottleneck in server applications.</li> 
