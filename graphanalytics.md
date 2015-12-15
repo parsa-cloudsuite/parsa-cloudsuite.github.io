@@ -8,11 +8,15 @@ This repository contains the docker image with Cloudsuite's Graph Analytics Benc
 
 The Graph Analytics Benchmark relies on using the Spark framework to perform graph analytics on large-scale datasets. Apache provides a graph processing library, GraphX, designed to run on top of Spark. The benchmark performs pagerank in the twitter dataset.
 
+[![Pulls on DockerHub][dhpulls]][dhrepo]
+[![Stars on DockerHub][dhstars]][dhrepo]
+
 ## Using the benchmark ##
 
 ### Dockerfiles ###
 
 Supported tags and their respective `Dockerfile` links:
+
 - [`benchmark`][benchmarkdocker] This builds a volume image with the benchmark binaries
 - [`data`][datadocker] This builds a volume image with the benchmark dataset
 - [`spark-master`][sparkmasterdocker] This builds a image with the Spark master node.
@@ -78,3 +82,6 @@ To run the benchmark from the interactive container, use the following command:
 [sparkclientdocker]: https://github.com/CloudSuite-EPFL/spark-base/blob/master/spark-client/Dockerfile "Spark Client Dockerfile"
 [repo]: https://github.com/CloudSuite-EPFL/GraphAnalytics "Graph Analytics GitHub Repo"
 [sparkrepo]: https://github.com/CloudSuite-EPFL/spark-base "Spark Base GitHub Repo"
+[dhrepo]: https://hub.docker.com/r/cloudsuite/graphanalytics/ "DockerHub Page"
+[dhpulls]: https://img.shields.io/docker/pulls/cloudsuite/graphanalytics.svg "Go to DockerHub Page"
+[dhstars]: https://img.shields.io/docker/stars/cloudsuite/graphanalytics.svg "Go to DockerHub Page"

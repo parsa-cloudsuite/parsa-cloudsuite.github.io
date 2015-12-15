@@ -5,6 +5,9 @@ bench: "true"
 ---
 
 
+[![Pulls on DockerHub][dhpulls]][dhrepo]
+[![Stars on DockerHub][dhstars]][dhrepo]
+
 The data serving benchmark relies on the Yahoo! Cloud Serving Benchmark (YCSB). YCSB is a framework to benchmark data store systems. This framework comes with the interfaces to populate and stress many popular data serving systems. Here we provide the instructions and pointers to download and install YCSB and use it with the Cassandra data store.
 
 ## Generating Datasets
@@ -13,65 +16,52 @@ The YCSB client has a data generator. After starting Cassandra, YCSB can start l
 
 ###Server Container
 Start the server container:
-	
-```
-docker run -it --name cassandra-server dataserving/cassandra:server bash"
-```
+
+    $ docker run -it --name cassandra-server dataserving/cassandra:server bash
 
 In order to create a keyspace and a column family, you can use the following commands after connecting to the server with the cassandra-cli under the directory Cassandra is unpacked in. (A link to a basic tutorial with cassandra-cli: http://wiki.apache.org/cassandra/CassandraCli )
 
-1. Run the server:
-	
-	```
-	cassandra
-	```
+1. Run the server:     
+```
+$ cassandra
+```
 
 2. Run the command:
-
-	``` 
-	cassandra-cli
-	```
+```
+$ cassandra-cli
+```
 
 3. Use the following commands to create a keyspace and column family for YCSB:
-
-	```
-	create keyspace usertable;
-	use usertable;
-	create column family data;
-	```
+```
+$ create keyspace usertable;
+$ use usertable;
+$ create column family data;
+```
 
 You can use other commands in the cassandra-cli to verify the correctness of the setup :
 
-```
-show keyspaces;
-show schema;
-```
+    $ dshow keyspaces;
+    $ show schema;
 
 If you’ve made a mistake you can use the drop command and try again:
 
-```
-drop keyspace usertable;
-```
+    $ drop keyspace usertable;
 
 ###Client
 If you have successfully created the aforementioned schema, you are ready to benchmark with ycsb.
 Start the client container:
-	
-```
-docker run -it --name cassandra-client --link cassandra-server:server dataserving/cassandra:client bash"
-```
+
+    $ docker run -it --name cassandra-client --link cassandra-server:server dataserving/cassandra:client bash	
 
 1. Change to the ycsb directory:
-	
-	```
-	cd ycsb
-	```
+```
+$ cd ycsb
+```
 
 2. Load dataset on ycsb: 
-
-	```
-	./bin/ycsb load cassandra-10 -p hosts=server -P workloads/workloada
-	```
+```
+$ ./bin/ycsb load cassandra-10 -p hosts=server -P workloads/workloada
+```
 
 More detailed instructions on generating the dataset can be found in Step 5 at [this](http://github.com/brianfrankcooper/YCSB/wiki/Running-a-Workload) link. Although Step 5 in the link describes the data loading procedure, other steps (e.g., 1, 2, 3, 4) are very useful to understand the YCSB settings.
 
@@ -101,8 +91,9 @@ The operationcount parameter sets the number of operations to be executed on the
 
 The run.command file takes the settings.dat file as an input and runs the following command:
 
-```
-/ycsb/bin/ycsb run cassandra-10 -p hosts=server -P /ycsb/workloads/workloada
-```
+    $ /ycsb/bin/ycsb run cassandra-10 -p hosts=server -P /ycsb/workloads/workloada
 
+[dhrepo]: https://hub.docker.com/r/cloudsuite/dataserving/ "DockerHub Page"
+[dhpulls]: https://img.shields.io/docker/pulls/cloudsuite/dataserving.svg "Go to DockerHub Page"
+[dhstars]: https://img.shields.io/docker/stars/cloudsuite/dataserving.svg "Go to DockerHub Page"
 

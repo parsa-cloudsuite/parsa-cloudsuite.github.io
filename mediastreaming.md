@@ -4,21 +4,18 @@ title: Media streaming
 bench: "true"
 ---
 
-**DISCLAIMER: This repo is still under construction!**
-
 [![Pulls on DockerHub][dhpulls]][dhrepo]
 [![Stars on DockerHub][dhstars]][dhrepo]
 
-This benchmark uses the Nginx web server as a streaming server for hosted videos of various lengths and qualities.
-The client, based on the httperf load generator, generates a load mix for different videos, to stress the server.
+This benchmark uses the [Nginx][nginx_repo] web server as a streaming server for hosted videos of various lengths and qualities. The client, based on [httperf's][httperf_repo] wsesslog session generator, generates a request mix for different videos, to stress the server.
 
 ## Using the benchmark ##
-The benchmark has two tiers: the server and the clients. The server runs Nginx, and the clients send requests to stream videos from the server.
-Each tier has its own image which is identified by its tag.
+The benchmark has two tiers: the server and the clients. The server runs Nginx, and the clients send requests to stream videos from the server. Each tier has its own image which is identified by its tag.
 
 ### Dockerfiles ###
 
 Supported tags and their respective `Dockerfile` links:
+
  - [`server`][serverdocker]: This represents the Nginx streaming server running as a daemon.
  - [`client`][clientdocker]: This represents the httperf client.
  - [`dataset`][datasetdocker]: This represents the video files dataset for the streaming server.
@@ -27,9 +24,7 @@ These images are automatically built using the mentioned Dockerfiles available o
 
 ### Dataset
 
-The streaming server requires a video dataset to serve. We generate a synthetic dataset, comprising several videos of different lengths and qualities.
-We provide a separate docker image that handles the dataset generation, which is then used to launch a dataset container that exposes a volume containing
-the video dataset.
+The streaming server requires a video dataset to serve. We generate a synthetic dataset, comprising several videos of different lengths and qualities. We provide a separate docker image that handles the dataset generation, which is then used to launch a dataset container that exposes a volume containing the video dataset.
 
 To set up the dataset you have to first `pull` the dataset image and then run it. To `pull` the dataset image use the following command:
 
@@ -68,10 +63,7 @@ To start the client container and connect it to the *streaming_network* network 
 
     $ docker run -it --name=streaming_client --volumes-from streaming_dataset --net streaming_network cloudsuite/mediastreaming:client
 
-To start the client, navigate to the /videoperf/run directory in the client container and launch the *benchmark.sh* script. This script is configured
-to launch a client process that issues a mix of requests for different videos of various qualities and performs a binary search of
-experiments to find the peak request rate the client can sustain while keeping the failure rate acceptable. At the end of the script's
-execution, the client's log files can be found under the /videoperf/run/output directory.
+To start the client, navigate to the /videoperf/run directory in the client container and launch the *benchmark.sh* script. This script is configured to launch a client process that issues a mix of requests for different videos of various qualities and performs a binary search of experiments to find the peak request rate the client can sustain while keeping the failure rate acceptable. At the end of the script's execution, the client's log files can be found under the /videoperf/run/output directory.
 
   [datasetdocker]: https://github.com/CloudSuite-EPFL/MediaStreaming/blob/master/dataset/Dockerfile "Dataset Dockerfile"  
 
@@ -83,3 +75,5 @@ execution, the client's log files can be found under the /videoperf/run/output d
   [dhrepo]: https://hub.docker.com/r/cloudsuite/mediastreaming/ "DockerHub Page"
   [dhpulls]: https://img.shields.io/docker/pulls/cloudsuite/mediastreaming.svg "Go to DockerHub Page"
   [dhstars]: https://img.shields.io/docker/stars/cloudsuite/mediastreaming.svg "Go to DockerHub Page"
+  [nginx_repo]: https://github.com/nginx/nginx "Nginx repo"
+  [httperf_repo]: https://github.com/httperf/httperf "httperf repo"
