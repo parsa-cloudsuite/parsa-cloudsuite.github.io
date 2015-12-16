@@ -47,7 +47,7 @@ CloudSuite covers a broad range of application categories commonly found in toda
 We provide Docker images for all CloudSuite benchmarks (available <a href="./benchmarks">here</a>). In addition to these Docker images, we have also prepared--and provide upon request--CloudSuite images running on the Simics full-system simulator, to facilitate micro-architectural simulation of CloudSuite applications. The Simics images allow the simulation of CloudSuite applications running on up to 64 cores and were released at our ISCA 2012 tutorial: "CloudSuite on Flexus".
 </p>
 <p>
- To get a copy of the CloudSuite images, please send an email to cloudsuite-admin(at)groupes.epfl.ch; you will be provided with an account to access and download the images. Please note that these images are based on the SPARC v9 ISA, running the Solaris OS, and are only compatible with Simics/Flexus. 
+ To get a copy of the CloudSuite images, please send an email to cloudsuite-admin(at)groupes.epfl.ch; you will be provided with an account to access and download the images. Please note that these images are based on the SPARC v9 ISA, running the Solaris OS, and are only compatible with Simics. 
 </p>
 </p>
 <h1>Usage and licenses of CloudSuite</h1>
