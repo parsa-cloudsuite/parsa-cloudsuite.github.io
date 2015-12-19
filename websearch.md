@@ -4,55 +4,85 @@ title: Web search
 bench: "true"
 ---
 
-This repository contains the docker image for Cloudsuite's Web Search benchmark.
+[![Pulls on DockerHub][dhpulls]][dhrepo]
+[![Stars on DockerHub][dhstars]][dhrepo]
 
-The Web Search benchmark relies on the Apache Solr search engine framework. The benchmark includes a client machine that simulates real-world clients that send requests to the index node.
+Web Serving is a main service in the cloud. Traditional web services with dynamic and static content are moved into the cloud to provide fault-tolerance and dynamic scalability by bringing up the needed number of servers behind a load balancer. Although many variants of the traditional web stack are used in the cloud (e.g., substituting Apache with other web server software or using other language interpreters in place of PHP), the underlying service architecture remains unchanged. Independent client requests are accepted by a stateless web server process which either directly serves static files from disk or passes the request to a stateless middleware script, written in a high-level interpreted or byte-code compiled language, which is then responsible for producing dynamic content. All the state information is stored by the middleware in backend databases such as cloud NoSQL data stores or traditional relational SQL servers supported by key-value cache servers to achieve high throughput and low latency. This benchmark includes a social networking engine (Elgg) and a client implemented using the Faban workload generator.
 
 ## Using the benchmark ##
+The benchmark has four tiers: the web server, the database server, the memcached server, and the clients. The web server runs Elgg and it connects to the memcached server and the database server. The clients send requests to login to the social network. Each tier has its own image which is identified by its tag.
 
 ### Dockerfiles ###
 
 Supported tags and their respective `Dockerfile` links:
 
-- [`data`][datadocker] This builds a volume image with the benchmark's dataset.
-- [`server`][serverdocker] This builds an image for the Spark worker node. You may spawn several workers.
-- [`client`][clientdocker] This builds an image with the Spark client node. The client is used to start the benchmark.
+ - [`web_server`][webserverdocker]: This represents the web server.
+ - [`memcached_server`][memcacheserverdocker]: This represents the memcached server.
+ - [`db_server`][mysqlserverdocker]: This represents the database server which runs MySQL.
+ - [`fabanclient`][clientdocker]: This represents the faban client.
 
-These images are automatically built using the mentioned Dockerfiles available on [`CloudSuite-EPFL/WebSearch`][repo].
+These images are automatically built using the mentioned Dockerfiles available on the `CloudSuite-EPFL/WebServing` [GitHub repo][repo].
 
-### Starting the volume images ###
+### Creating a network between the servers and the client(s)
 
-The first step is to create the volume images that contain the dataset of the Web Search benchmark. First `pull` the volume images, using the following command:
+To facilitate the communication between the client(s) and the servers, we build a docker network:
 
-	$ docker pull cloudsuite/websearch:data
+    $ docker network create my_net
 
-The following command will start the volume images, making both the data available for other docker images on the host:
+We will attach the launched containers to this newly created docker network.
 
-	$ docker create --name data cloudsuite/websearch:data
+### Starting the Web Server ####
+To start the web server you have to first `pull` the server image and then run it. To `pull` the server image use the following command:
 
-### Starting the server (Index Node) ###
+    $ docker pull cloudsuite/webserving:web_server
 
-To start the server you have to first `pull` the server image and then run it. To `pull` the server image, use the following command:
+The following command will start the web server, and attach it to the *my_net* network:
 
-	$ docker pull cloudsuite/websearch:server
+    $ docker run -d -t --net=my_net --privileged=true --name=mysql_server cloudsuite/webserving:web_server /etc/bootstrap.sh
+    
+### Starting the Database Server ####
+To start the database server you have to first `pull` the server image and then run it. To `pull` the server image use the following command:
 
-The following command will start the server and forward port 8983 to the host, so that the Solr web interface can be accessed from the web browser, using the host IP address.
+    $ docker pull cloudsuite/webserving:db_server
 
-	$ docker run --volumes-from data --name server -it -p 8983:8983 -t websearch:server
+The following command will start the database server, and attach it to the *my_net* network:
 
-### Starting the client and running the benchmark ###
+    $ docker run -d -t --net=my_net --privileged=true --name=mysql_server cloudsuite/webserving:db_server
+    
+### Starting the Memcached Server ####
+To start the memcached server you have to first `pull` the server image and then run it. To `pull` the server image use the following command:
 
-To start a worker you have to first `pull` the client image and then run it. To `pull` the Spark worker node image, use the following command:
+    $ docker pull cloudsuite/webserving:memcached_server
 
-	$ docker pull cloudsuite/websearch:client
+The following command will start the memcached server, and attach it to the *my_net* network:
 
-The following command will start the client node and run the benchmark:
+    $ docker run run -d -t --net=my_net --privileged=true --name=memcache_server cloudsuite/webserving:memcached_server
 
-	$ docker run --volumes-from data -p 9980:9980 --name client --link=server -it -t websearch:client
+### Starting the Client ####
 
-The output results will show on the screen after the benchmark finishes.
+To start the client you have to first `pull` the client image and then run it. To `pull` the client image use the following command:
 
-[datadocker]: https://github.com/CloudSuite-EPFL/WebSearch/tree/master/data/Dockerfile "Data volume Dockerfile"
-[serverdocker]: https://github.com/CloudSuite-EPFL/WebSearch/tree/master/server/Dockerfile "Server Dockerfile"
-[clientdocker]: https://github.com/CloudSuite-EPFL/WebSearch/tree/master/client/Dockerfile "Client Dockerfile"
-[repo]: https://github.com/CloudSuite-EPFL/WebSearch "Web Search GitHub Repo"
+    $ docker pull cloudsuite/webserving:faban_client
+
+To start the client container and connect it to the *my_net* network use the following command:
+
+    $ docker run -d -t --net=my_net --privileged=true --name=faban_client cloudsuite/webserving:faban_client /etc/bootstrap.sh -bash
+
+###  Running the benchmark ###
+
+To start the client, you need to run the run.sh file. 
+
+    $ ./run.sh
+
+You can find the summary of the results in summary.xml file. 
+
+
+  [webserverdocker]: https://github.com/CloudSuite-EPFL/WebServing/blob/master/web_server/Dockerfile "WebServer Dockerfile"
+  [memcacheserverdocker]: https://github.com/CloudSuite-EPFL/WebServing/blob/master/memcached_server/Dockerfile "MemcacheServer Dockerfile"
+  [mysqlserverdocker]: https://github.com/CloudSuite-EPFL/WebServing/blob/master/db_server/Dockerfile "MysqlServer Dockerfile"
+  [clientdocker]: https://github.com/CloudSuite-EPFL/WebServing/blob/master/faban_client/Dockerfile "Client Dockerfile"
+
+  [repo]: https://github.com/CloudSuite-EPFL/WebServing "GitHub Repo"
+  [dhrepo]: https://hub.docker.com/r/cloudsuite/webserving/ "DockerHub Page"
+  [dhpulls]: https://img.shields.io/docker/pulls/cloudsuite/webserving.svg "Go to DockerHub Page"
+  [dhstars]: https://img.shields.io/docker/stars/cloudsuite/webserving.svg "Go to DockerHub Page"
