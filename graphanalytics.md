@@ -4,12 +4,13 @@ title: Graph analytics
 bench: "true"
 ---
 
-This repository contains the docker image with Cloudsuite's Graph Analytics Benchmark.
-
-The Graph Analytics Benchmark relies on using the Spark framework to perform graph analytics on large-scale datasets. Apache provides a graph processing library, GraphX, designed to run on top of Spark. The benchmark performs pagerank in the twitter dataset.
 
 [![Pulls on DockerHub][dhpulls]][dhrepo]
 [![Stars on DockerHub][dhstars]][dhrepo]
+
+This repository contains the docker image with Cloudsuite's Graph Analytics Benchmark.
+
+The Graph Analytics Benchmark relies on using the Spark framework to perform graph analytics on large-scale datasets. Apache provides a graph processing library, GraphX, designed to run on top of Spark. The benchmark performs pagerank in the twitter dataset.
 
 ## Using the benchmark ##
 

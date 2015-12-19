@@ -4,10 +4,10 @@ title: In-memory analytics
 bench: "true"
 ---
 
-The explosion of accessible human-generated information necessitates automated analytical processing to cluster, classify, and filter this information. Recommender systems are a subclass of information filtering system that seek to predict the 'rating' or 'preference' that a user would give to an item. Recommender systems have become extremely common in recent years, and are applied in a variety of applications. The most popular ones are probably movies, music, news, books, research articles, search queries, social tags, and products in general. Because these applications suffer from I/O operations, nowadays, most of them are running in memory. The In Memory Analytics benchmark runs the alternating least squares (ALS) algorithm which is provided by Spark MLlib. 
-
 [![Pulls on DockerHub][dhpulls]][dhrepo]
 [![Stars on DockerHub][dhstars]][dhrepo]
+
+The explosion of accessible human-generated information necessitates automated analytical processing to cluster, classify, and filter this information. Recommender systems are a subclass of information filtering system that seek to predict the 'rating' or 'preference' that a user would give to an item. Recommender systems have become extremely common in recent years, and are applied in a variety of applications. The most popular ones are probably movies, music, news, books, research articles, search queries, social tags, and products in general. Because these applications suffer from I/O operations, nowadays, most of them are running in memory. The In Memory Analytics benchmark runs the alternating least squares (ALS) algorithm which is provided by Spark MLlib. 
 
 Create volumes on each node in the cluster:
 
